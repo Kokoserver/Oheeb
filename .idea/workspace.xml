@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06094586-e4af-457b-8162-5eb0478aa80f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Oheeb/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Oheeb/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,9 +40,13 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="184" y="26" key="SettingsEditor" timestamp="1590261169653">
+    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1590508106746">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="184" y="26" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1590261169653" />
+    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1590508106746" />
+    <state x="184" y="26" key="SettingsEditor" timestamp="1590508286422">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="184" y="26" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1590508286422" />
   </component>
 </project>
