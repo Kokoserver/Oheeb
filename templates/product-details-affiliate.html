@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% load static%}
+{% block content%}
+        <div class="product-details-area pt-90 pb-10">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="product-details-img-left">
+                            <img class="zoompro" src="{{product.image.url}}" data-zoom-image="{{product.image.url}}" alt="product-details-img">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="product-details-content pro-details-content-modify">
+                            
+                            <h2>{{product.name}}</h2>
+                            <div class="product-ratting-review">
+                                <div class="product-ratting">
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star"></i>
+                                    <i class="la la-star-half-o"></i>
+                                </div>
+                                <div class="product-review">
+                                    <span>40+Reviews</span>
+                                </div>
+                            </div>
+                            <div class="pro-details-price-wrap">
+                                <div class="product-price">
+                                    <span>${{product.price}}</span>
+                                </div>
+                                <div class="dec-rang"><span>- 30%</span></div>
+                                
+                            </div>
+                            <div class="pro-details-buy-now btn-hover btn-hover-radious">
+                                <a href="{% url 'cart'  product.id%}">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="description-review-wrapper pb-90">
+            <div class="container">
+                <div class="row">
+                    <div class="ml-auto mr-auto col-lg-10">
+                        <div class="dec-review-topbar nav mb-40">
+                            <a>Description</a>
+                        </div>
+                        <div class="tab-content dec-review-bottom">
+                                <div class="description-wrap">
+                                    <p>{{product.details}}</p>
+                                </div>
+                            </div>
+            </div>
+        </div>
+        {% if product.category == 'switch' or product.category == 'router' %}
+
+        {%else%}
+        <div class="product-area  pt-30 mt-20">
+            <div class="container">
+                <div class="section-title-6 mb-50 text-center">
+                    <h2>Related Product</h2>
+                </div>
+                <div class="product-slider-active owl-carousel">
+                 {% for item in category%}
+                 <div class="product-wrap">
+                    <div class="product-img mb-15">
+                        <a href="{% url 'product' item.id%}"><img src="{{item.image.url}}" alt="product"></a>
+                        <div class="product-action">
+                            <a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class="la la-plus"></i></a>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <span>{{item.category}}</span>
+                        <h4><a href="{% url 'product' item.id%}">{{item.name}}</a></h4>
+                        <div class="price-addtocart">
+                            <div class="product-price">
+                                <span>${{item.price}}</span>
+                            </div>
+                            <div class="product-addtocart">
+                                <a title="Add To Cart" href="{% url 'cart'  item.id %}">+ Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 {% endfor%}
+                 {%endif%}
+            </div>
+        </div>
+
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+{% endblock%}

@@ -1,0 +1,39 @@
+{% extends 'base.html'%}
+{%load static%}
+{%block content%}
+<div class="login-register-area pt-30 pb-90">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-md-12 ml-auto mr-auto">
+                <div class="login-register-wrapper">
+                    <div class="login-register-tab-list nav">
+                        <a class="active" data-toggle="tab" href="#lg1">
+                            <h4>login </h4>
+                        </a>
+                    </div>
+                    <div class="tab-content">
+                        <div id="lg1" class="tab-pane active">
+                            <div class="login-form-container">
+                                <div class="login-register-form">
+                                    {% include 'alert.html'%}
+                                    <form action="{% url 'login'%}" method="post">
+                                        {% csrf_token%}
+                                        <input type="text" name="username" placeholder="Username">
+                                        <input type="password" name="password" placeholder="Password">
+                                        <div class="button-box">
+                                            <div class="login-toggle-btn">
+                                                <a href="{% url 'helpCenter'%}">Forgot Password?</a>
+                                            </div>
+                                            <button type="submit">Login</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{%endblock%}

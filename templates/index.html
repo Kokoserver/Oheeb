@@ -1,0 +1,358 @@
+{% extends 'base.html'%}
+{%load static%}
+ {%block content%}
+ <div class="row">
+     <div class="col-md-2"></div>
+     <div class="col-md-8">{% include 'alert.html'%}</div>
+     <div class="col-md-2"></div>
+ </div>
+        <div class="slider-area">
+            <div style="min-height: 30vh;">
+                <div class="slider-active-4 owl-carousel dot-style-2">
+                    <div class="slider-height-8 bg-img res-white-overly-xs" style="background-image:url({% static 'images/slider/banner.jpg' %}); background-position: center center; background-size:cover">
+                        <div class="row align-items-center">
+                            <div class="ml-auto col-lg-9 col-md-12 col-12 col-sm-12">
+                              
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-height-8 bg-img res-white-overly-xs" style="background-image:url({% static 'images/slider/bg-2.jpg' %}); background-position: center center; background-size:cover">
+                        <div class="row align-items-center">
+                            <div class="ml-auto col-lg-9 col-md-12 col-12 col-sm-12">
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-height-8 bg-img res-white-overly-xs" style="background-image:url({% static 'images/slider/bg-3.jpg' %}); background-position: center center; background-size:cover">
+                        <div class="row align-items-center">
+                            <div class="ml-auto col-lg-9 col-md-12 col-12 col-sm-12">
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-height-8 bg-img res-white-overly-xs" style="background-image:url({% static 'images/slider/bg-4.jpg' %}); background-position: center center; background-size:cover">
+                        <div class="row align-items-center">
+                            <div class="ml-auto col-lg-9 col-md-12 col-12 col-sm-12">
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-height-8 bg-img res-white-overly-xs" style="background-image:url({% static 'images/slider/bg-5.jpg' %});background-position: center center; background-size:cover">
+                        <div class="row align-items-center">
+                            <div class="ml-auto col-lg-9 col-md-12 col-12 col-sm-12">
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-height-8 bg-img res-white-overly-xs" style="background-image:url({% static 'images/slider/bg-6.jpg' %}); background-position: center center">
+                        <div class="row align-items-center; background-size:cover">
+                            <div class="ml-auto col-lg-9 col-md-12 col-12 col-sm-12">
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-height-8 bg-img res-white-overly-xs" style="background-image:url({% static 'images/slider/bg-7.jpg' %}); background-position: center center; background-size:cover">
+                        <div class="row align-items-center">
+                            <div class="ml-auto col-lg-9 col-md-12 col-12 col-sm-12">
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-height-8 bg-img res-white-overly-xs" style="background-image:url({% static 'images/slider/bg-8.jpg' %}); background-position: center center; background-size:cover">
+                        <div class="row align-items-center">
+                            <div class="ml-auto col-lg-9 col-md-12 col-12 col-sm-12">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="container-fluid pt-30">
+              <div class="row">
+                {%for switch in switch %}
+                <div class="col-sm-6 banner-wrap">
+                    <a href="{% url 'product' switch.id %} " class="home-featured-product">
+                    <span class="home-featured-product-image"> 
+                        <img src="{{switch.image.url}}" style="height: 315px;">
+                    </span>
+                        <span href="" class="home-featured-product-text">
+                        <span class="home-featured-product-name">
+                           
+                            {{switch.name}}
+                        </span>
+                        <span class="home-featured-product-price">
+                            ${{switch.price}}
+                        </span>
+                        </span>
+                        </a>
+                </div>
+                {%endfor%}
+                {%for router in router %}
+                <div class="col-sm-6 banner-wrap">
+                    <a href="{% url 'product' router.id %}" class="home-featured-product ">
+                    <span class="home-featured-product-image">
+                        <img src="{{router.image.url }}"  style="height: 315px;">
+                    </span>
+                        <span href="" class="home-featured-product-text">
+                        <span class="home-featured-product-name">
+                            {{router.name}}
+                        </span>
+                        <span class="home-featured-product-price">
+                            ${{router.price}}
+                        </span>
+                        </span>
+                        </a>
+                        </div>
+                        {%endfor%}
+              </div>
+
+        </div>
+   
+
+
+        <div class="product-area pb-40">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class=" text-center my-3 border-bottom-2 section-title-5">
+                        <h2 class="pb-40">POPULAR CATEGORIES</h2>
+                    </div>
+                    
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 text-center">
+                    <div class="banner-wrap mb-30">
+                        <a href="{% url 'accesspoint'%}">
+                            <img src="{% static 'images/categories/AccessPoint.jpg'%}" alt="banner">
+                        </a >
+                        <p  class="pt-4">  <a class="mt-2" href="{% url 'accesspoint'%}">ACCESS POINT</a></p>
+                    </div>
+                </div> 
+                <div class="col-lg-3 col-md-6 col-sm-6 text-center">
+                    <div class="banner-wrap mb-30">
+                        <a href="{% url 'desktop'%}">
+                        <img src="{% static 'images/categories/BusinessComputer.jpg'%}" alt="banner">
+                        </a>
+                        <p  class="pt-4">  <a class="mt-2" href="{% url 'desktop'%}">BUSINESS DESKTOPS</a></p>
+                    </div>
+                </div> 
+                <div class="col-lg-3 col-md-6 col-sm-6 text-center">
+                    <div class="banner-wrap mb-30">
+                        <a href="{% url 'monitor'%}">
+                            <img src="{% static 'images/categories/Monitors.jpg'%}" alt="banner">
+                        </a>
+                        <p  class="pt-4">  <a class="mt-2" href="{% url 'monitor'%}">MONITORS</a></p>
+                    </div>
+                </div> 
+                <div class="col-lg-3 col-md-6 col-sm-6 text-center">
+                    <div class="banner-wrap mb-30">
+                        <a href="{% url 'motherboard'%}">
+                            <img src="{% static 'images/categories/Motherboard.jpg'%}" alt="banner">
+                        </a>
+                       <p  class="pt-4"> <a href="{% url 'motherboard'%}">INTEL MOTHERBOARD</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-area pb-40">
+            <div class="container-fluid">
+                <div class="section-title-tab-wrap">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-4 col-md-4 col-sm-4">
+                            <div class="section-title-5">
+                                <h2>All Product</h2>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-8 col-md-8 col-sm-8">
+                            <div class="product-tab-list-4 nav">
+                                <a href="#product-10" data-toggle="tab">
+                                    <h5>Desktop</h5>
+                                </a>
+                                <a class="active" href="#product-11" data-toggle="tab">
+                                    <h5>Motherboard</h5>
+                                </a>
+                                <a href="#product-12" data-toggle="tab">
+                                    <h5>Monitor</h5>
+                                </a>
+                                <a href="#product-13" data-toggle="tab">
+                                    <h5>Access Point</h5>
+                                </a>
+                                <a href="#product-14" data-toggle="tab">
+                                    <h5>Camera</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content jump">
+                    <div id="product-10" class="tab-pane">
+                        <div class="row">
+                            {%for desktop in desktop %}
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                                <div class="product-wrap product-border-3 product-img-zoom mb-30">
+                                    <div class="product-img">
+                                        <a href="{% url 'product' desktop.id %}"><img src="{{desktop.image.url}}" alt="product"></a>
+                                        <div class="product-action-4">
+                                            <div class="product-action-4-style">
+                                                <a class=""  data-tooltip="Add To Cart" id="AddToCart"><i  class="la la-cart-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-content product-content-padding">
+                                        <h4><a href="{% url 'product' desktop.id %}">{{desktop.name}}</a></h4>
+                                        <div class="price-addtocart">
+                                            <div class="product-price">
+                                                <span>${{desktop.price}}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {%endfor%}
+                        </div>
+                    </div>
+                    <div id="product-11" class="tab-pane active">
+                        <div class="row">
+                            {%for motherboard in motherboard %}
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                                <div class="product-wrap product-border-3 product-img-zoom mb-30">
+                                    <div class="product-img">
+                                        <a href="{% url 'product' motherboard.id %}"><img src="{{motherboard.image.url}}" alt="product"></a>
+                                        <div class="product-action-4">
+                                            <div class="product-action-4-style">
+                                                <a data-tooltip="Add To Cart" href="#" id="addToCart"><i class="la la-cart-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-content product-content-padding">
+                                        <h4><a href="motherboard">{{motherboard.name}}</a></h4>
+                                        <div class="price-addtocart">
+                                            <div class="product-price">
+                                                <span>${{motherboard.price}}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {%endfor%}
+                           
+                        </div>
+                    </div>
+                    <div id="product-12" class="tab-pane">
+                        <div class="row">
+                            {%for monitor in monitor %}
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                                <div class="product-wrap product-border-3 product-img-zoom mb-30">
+                                    <div class="product-img">
+                                        <a href="{% url 'product' monitor.id %}"><img src="{{monitor.image.url}}" alt="product"></a>
+                                        <div class="product-action-4">
+                                            <div class="product-action-4-style">
+                                                <a data-tooltip="Add To Cart" href="#" id="addToCart"><i class="la la-cart-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-content product-content-padding">
+                                        <h4><a href="{% url 'product' monitor.id %}">{{monitor.name}}</a></h4>
+                                        <div class="price-addtocart">
+                                            <div class="product-price">
+                                                <span>${{monitor.price}}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {%endfor%}
+                        </div>
+                    </div>
+                    <div id="product-13" class="tab-pane">
+                        <div class="row">
+                            {%for accesspoint in accesspoint %}
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                                <div class="product-wrap product-border-3 product-img-zoom mb-30">
+                                    <div class="product-img">
+                                        <a href="{% url 'product' accesspoint.id %}"><img src="{{accesspoint.image.url}}" alt="product"></a>
+                                        <div class="product-action-4">
+                                            <div class="product-action-4-style">
+                                                <a data-tooltip="Add To Cart" href="#" id="addToCart"><i class="la la-cart-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-content product-content-padding">
+                                        <h4><a href="{% url 'product' accesspoint.id %}">{{accesspoint.name}}</a></h4>
+                                        <div class="price-addtocart">
+                                            <div class="product-price">
+                                                <span>${{accesspoint.price}}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {%endfor%}
+                        </div>
+                    </div>
+                    <div id="product-14" class="tab-pane">
+                        <div class="row">
+                            {%for camera in camera %}
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                                <div class="product-wrap product-border-3 product-img-zoom mb-30">
+                                    <div class="product-img">
+                                        <a href="{% url 'product' camera.id %}"><img src="{{camera.image.url}}" alt="product"></a>
+                                        <div class="product-action-4">
+                                            <div class="product-action-4-style">
+                                                <a data-tooltip="Add To Cart" href="#" id="addToCart"><i class="la la-cart-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-content product-content-padding">
+                                        <h4><a href="{% url 'product' camera.id %}">{{camera.name}}</a></h4>
+                                        <div class="price-addtocart">
+                                            <div class="product-price">
+                                                <span>${{camera.price}}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {%endfor%}
+                </div>
+            </div>
+        </div>
+        <div class="brand-logo-area pb-70">
+            <div class=" text-center my-3 border-bottom-2 section-title-5">
+                <h2 class="pb-20">FEATURED BRANDS</h2>
+            </div>
+            <div class="container-fluid">
+                <div class="brand-logo-padding">
+                    <div class="brand-logo-active-2 owl-carousel">
+                        <div class="single-brand-logo">
+                            <img src="{% static 'images/brand-logo/ASUS.png'%}" alt="">
+                        </div>
+                        <div class="single-brand-logo">
+                            <img src="{% static 'images/brand-logo/CORSAIR.png'%}" alt="">
+                        </div>
+                        <div class="single-brand-logo">
+                            <img src="{% static 'images/brand-logo/LTS.jpg'%}" alt="">
+                        </div>
+                        <div class="single-brand-logo">
+                            <img src="{% static 'images/brand-logo/PlatinumTools.png'%}" alt="">
+                        </div>
+                        <div class="single-brand-logo">
+                            <img src="{% static 'images/brand-logo/TrippLite.png'%}" alt="">
+                        </div>
+                        <div class="single-brand-logo">
+                            <img src="{% static 'images/brand-logo/Ubiquiti.png'%}" alt="">
+                        </div>
+                        <div class="single-brand-logo">
+                            <img src="images/brand-logo/WesternDigital.png" alt="">
+                            <img src="{% static 'images/brand-logo/WesternDigital.png' %}" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+{%endblock%}
