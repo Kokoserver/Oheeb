@@ -75,7 +75,7 @@
                 <div class="col-sm-6 banner-wrap">
                     <a href="{% url 'product' switch.id %} " class="home-featured-product">
                     <span class="home-featured-product-image"> 
-                        <img src="{{switch.image.url}}" style="height: 315px;">
+                        <img src="{% static switch.image %}" style="height: 315px;">
                     </span>
                         <span href="" class="home-featured-product-text">
                         <span class="home-featured-product-name">
@@ -88,12 +88,14 @@
                         </span>
                         </a>
                 </div>
+
+
                 {%endfor%}
                 {%for router in router %}
                 <div class="col-sm-6 banner-wrap">
                     <a href="{% url 'product' router.id %}" class="home-featured-product ">
                     <span class="home-featured-product-image">
-                        <img src="{{router.image.url }}"  style="height: 315px;">
+                        <img src="{% static router.image %}"  style="height: 315px;">
                     </span>
                         <span href="" class="home-featured-product-text">
                         <span class="home-featured-product-name">
@@ -194,7 +196,7 @@
                             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="product-wrap product-border-3 product-img-zoom mb-30">
                                     <div class="product-img">
-                                        <a href="{% url 'product' desktop.id %}"><img src="{{desktop.image.url}}" alt="product"></a>
+                                        <a href="{% url 'product' desktop.id %}"><img src="{% static desktop.image %}" alt="product"></a>
                                         <div class="product-action-4">
                                             <div class="product-action-4-style">
                                                 <a class=""  data-tooltip="Add To Cart" id="AddToCart"><i  class="la la-cart-plus"></i></a>
@@ -220,13 +222,14 @@
                             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="product-wrap product-border-3 product-img-zoom mb-30">
                                     <div class="product-img">
-                                        <a href="{% url 'product' motherboard.id %}"><img src="{{motherboard.image.url}}" alt="product"></a>
+                                        <a href="{% url 'product' motherboard.id %}"><img src="{% static motherboard.image %}" alt="product"></a>
                                         <div class="product-action-4">
                                             <div class="product-action-4-style">
                                                 <a data-tooltip="Add To Cart" href="#" id="addToCart"><i class="la la-cart-plus"></i></a>
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="product-content product-content-padding">
                                         <h4><a href="motherboard">{{motherboard.name}}</a></h4>
                                         <div class="price-addtocart">
@@ -247,7 +250,7 @@
                             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="product-wrap product-border-3 product-img-zoom mb-30">
                                     <div class="product-img">
-                                        <a href="{% url 'product' monitor.id %}"><img src="{{monitor.image.url}}" alt="product"></a>
+                                        <a href="{% url 'product' monitor.id %}"><img src="{% static monitor.image %}" alt="product"></a>
                                         <div class="product-action-4">
                                             <div class="product-action-4-style">
                                                 <a data-tooltip="Add To Cart" href="#" id="addToCart"><i class="la la-cart-plus"></i></a>
@@ -273,7 +276,7 @@
                             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="product-wrap product-border-3 product-img-zoom mb-30">
                                     <div class="product-img">
-                                        <a href="{% url 'product' accesspoint.id %}"><img src="{{accesspoint.image.url}}" alt="product"></a>
+                                        <a href="{% url 'product' accesspoint.id %}"><img src="{% static accesspoint.image %}" alt="product"></a>
                                         <div class="product-action-4">
                                             <div class="product-action-4-style">
                                                 <a data-tooltip="Add To Cart" href="#" id="addToCart"><i class="la la-cart-plus"></i></a>
@@ -299,7 +302,7 @@
                             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="product-wrap product-border-3 product-img-zoom mb-30">
                                     <div class="product-img">
-                                        <a href="{% url 'product' camera.id %}"><img src="{{camera.image.url}}" alt="product"></a>
+                                        <a href="{% url 'product' camera.id %}"><img src="{% static router.image %}" alt="product"></a>
                                         <div class="product-action-4">
                                             <div class="product-action-4-style">
                                                 <a data-tooltip="Add To Cart" href="#" id="addToCart"><i class="la la-cart-plus"></i></a>

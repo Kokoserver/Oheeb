@@ -81,7 +81,7 @@ DATABASES = {
         'NAME': 'Oheeb',
         'USER': "postgres",
         "PASSWORD": '08089223577ola',
-        "HOST": 5432
+        "HOST": 'localhost'
     }
 }
 import dj_database_url
