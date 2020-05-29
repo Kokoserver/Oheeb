@@ -3,55 +3,42 @@
     <div class="container-fluid">
         <div class="footer-top pb-40">
             <div class="row">
-                <div class="col-lg-3 col-md-8 col-12 col-sm-12">
+                <div class="col-md-4 col-sm-12">
                     <div class="footer-widget mb-30">
                         <a href="#"><img src="{% static 'images/logo/OHEEB2.png'%}" alt="logo"></a>
                         <div class="footer-about">
-                            <p class="text-light">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms. </p>
+                            <p class="text-light">OHEEB - Security and secure at Home</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-6 col-sm-6">
+                <div class="col-md-4 col-sm-6">
                     <div class="footer-widget mb-30 ml-55">
                         <div class="footer-title-3">
                             <h3 class="text-light">Company</h3>
                         </div>
                         <div class="footer-list-3">
                             <ul >
-                                <li><a  class="text-light" href="about-us.html">About US</a></li>
-                                <li><a class="text-light" href="blog.html">Blogs</a></li>
-                                <li><a class="text-light" href="#">Careers</a></li>
-                                <li><a class="text-light" href="contact.html">Contact</a></li>
+                                <li><a   class="text-light" href="{% url 'about'%}">About US</a></li>
+                                <li><a class="text-light" href="{% url 'monitor'%}">Monitor</a></li>
+                                <li><a class="text-light" href="{% url 'desktop'%}">Desktop</a></li>
+                                <li><a class="text-light" href="{% url 'camera'%}"> Ip Camera</a></li>
+                                <li><a class="text-light" href="{% url 'motherboard'%}">Motherboard</a></li>
+                                <li><a class="text-light" href="{% url 'accesspoint'%}">Access Point</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-               
-                <div class="col-lg-4 col-md-4 col-6 col-sm-6">
-                    <div class="footer-widget mb-30 ml-35">
-                        <div class="footer-title-3">
-                            <h3 class="text-light">Helps</h3>
-                        </div>
-                        <div class="footer-list-3">
-                            <ul>
-                                <li><a class="text-light" href="#">Introduction</a></li>
-                                <li><a class="text-light" href="#">Feedback</a></li>
-                                <li><a class="text-light" href="#">Referrals</a></li>
-                                <li><a class="text-light" href="#">Network Status</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 col-6 col-sm-6">
+        
+                <div class=" col-md-4 col-sm-6">
                     <div class="footer-widget mb-30 ml-135">
                         <div class="footer-title-3">
                             <h3 class="text-light" >Contact Us</h3>
                         </div>
                         <div class="footer-list-3">
                             <ul>
-                                <li><a  class="text-light" href="#">Email:</a></li>
-                                <li><a  class="text-light" href="#">Address:</a></li>
-                                <li><a  class="text-light" href="#">Phone Number:</a></li>
+                                <li><a  class="text-light" href="#">Email: Support@oheeb.com</a></li>
+                                <li><a  class="text-light" href="#">Address: 3901 Dillion st, Baltimore, MD 21224, Maryland </a></li>
+                                <li><a  class="text-light" href="#">Phone Number: +4432943559</a></li>
                                 
                             </ul>
                         </div>
@@ -61,7 +48,7 @@
         </div>
         
             <div class="copyright-3 text-center pt-20 pb-20 border-top-1">
-                <p class="text-light">Copyright © <a class="text-light" href="#">Oheeb</a>. All Right Reserved</p>
+                <p class="text-light">Copyright © <a class="text-light" href="#">Oheeb.com</a>. All Right Reserved</p>
             </div>
         </div>
     </div>

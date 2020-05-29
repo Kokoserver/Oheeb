@@ -63,8 +63,8 @@ def cart(request, id):
              return redirect('home')
         
 
-def mail(request):
-    return render(request, "index.html")
+def about(request):
+    return render(request, "about-us.html")
 
 
 def search(request):

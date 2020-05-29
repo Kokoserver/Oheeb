@@ -1,0 +1,60 @@
+{% extends 'base.html'%}
+{%load static%}
+{% block content%}
+ <div class="container pt-50 pb-50">
+     <div class="row">
+         <div class="col-md-2"></div>
+         <div class="col-md-8">
+           <h1 class="text-dark mb-5">ABOUT OHEEB COMPUTERS & ELECTRONICS</h1>
+            <P class="text-left">
+               Oheeb Computers & Electronics has been offering quality off-the-shelf computer and networking equipment to both our local and national customer base since 1980. From the beginning with one single location in San Antonio, TX,oheeb has grown steadily over the last 33+ years to now consist of a highly integrated network of eight store locations throughout Texas, a National & International Mail Order Department to service customers across the globe, and a large Internet presence, where our extensive product listings and resources are simply a mouse-click away.
+            </P>
+            <P class="text-left">
+               Oheeb’s 25,000 square foot distribution center is packed with over 12,000 computer and network technology products that not only supply our stores, but is at the ready to ship for all Internet, telephone, fax, and emailed orders. Through a variety of shipping methods,oheeb can ship anywhere within the United States and multiple places globally.
+            </P>
+            <P class="text-left">
+               Oheeb Computers & Electronics remains committed to giving customers the products they want, with competitive pricing and a level of quality, service, and attention they deserve. Our diversified national business customer base is well over 250,000, primarily representing educational, industrial, commercial, and government entities with our consumer customer base growing rapidly alongside.
+            </P>
+            <h1 class="text-dark mb-5">
+               Oheeb offers a variety of products and services, listed below are just a few of the things we have to offer.
+            </h1>
+                <ul class="pb-30">
+                    <li>Computers (Desktops, Laptops, Servers, &amp; Tablets) 
+                        <small>Custom, &amp; Pre-Built Desktops, Laptops, &amp; Servers Systems</small>
+                    </li>
+                    <li>Server Racks, Enclosures, &amp; Computer Cases 
+                        <small>Open, Enclosed, Wall Mounted, Accessories &amp; More</small>
+                    </li>
+                    <li>Security &amp; Surveillance Equipment 
+                        <small>Analog, IP, and Wireless Cameras, DVRs, NVRs, &amp; More</small></li>
+                        <li> Networking Hardware, &amp; Solutions <small>Routers, Server Racks, Switches, Wired &amp; Wireless Solutions</small></li>
+                    </ul>
+                <ul class="pb-30">
+                    <li> Computer Components, Peripherals, &amp; Software 
+                        <small>CPU’s, Drives, Input Devices, Monitors, Motherboards, &amp; More</small>
+                    </li>
+                <li> AV (Audio/Video) Equipment <small>Amplifiers, Mounts, PA Systems, Projectors, &amp; More</small>
+                </li>
+                <li> Power Protection, &amp; Standby Power Solutions 
+                    <small>Outlet Strips, Surge Protectors, UPS Backups, &amp; More</small>
+                </li><li> Cables, Connectors, Bulk, &amp; Pre-Made 
+                    <small>Bulk, Cat 5e, Cat 6, Fiber Optic, USB, &amp; More</small></li></ul><ul><li> Batteries, Chargers, Inverters, &amp; Accessories 
+                        <small>Alkaline, Button, Camera, Coin, Phone, &amp; Rechargeable</small>
+                    </li>
+                        <li> Tools, &amp; Testing Equipment 
+                            <small>Clamp, Digital, Network, Phone, Tone/Probe Testers, &amp; More</small>
+                        </li>
+                        <li> Wire Organization, Labeling &amp; Other Supplies 
+                            <small> Clips, Duct, Labeling, Sleeves, Tape, Ties, Wraps, &amp; More </small>
+                        </li>
+                        <li> Soldering Equipment, &amp; Supplies <small>Solder, Soldering Irons, Stations, Tips, &amp; Accessories</small>
+                        </li>
+             </ul>
+             <a href="{% url 'contact'%}" class="btn btn-outline-success btn-lg px-5 py-3  mt-4 ml-5">Contact Us</a>
+         </div>
+         <div class="col-md-2"></div>
+
+        
+     </div>
+ </div>
+        {% endblock%}
