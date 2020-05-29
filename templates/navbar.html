@@ -92,7 +92,7 @@
                                     <form method="GET" action="{% url 'search'%}">
                                         <div class="form-search-4">
                                             <input id="search" class="input-text" name="keywords" value="{{data}}" placeholder="Search Hear" type="search">
-                                            <button class="btn" type="submit">
+                                            <button class="" type="submit">
                                                 <i class="la la-search" style="cursor: pointer;"></i>
                                             </button>
                                         </div>
@@ -100,7 +100,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-2 col-lg-2 " style="margin-left: 3%; margin-right:0px">
+                        <div class="col-xl-2 col-lg-2 " style="margin-left: 1%; margin-right:0px">
                             <div class="cart-wrap cart-wrap-3 cart-wrap-3-white">
                                 
                                 <h1><a href="{% url 'dashboard'%}"><i class="la la-shopping-cart"></i></a></h1>
@@ -124,7 +124,7 @@
                             <div class="cart-wrap common-style">
                                 <button class="cart-active">
                                     <i class="la la-shopping-cart"></i>
-                                    <span class="count-style">0 Items</span>
+                                    <span class="count-style">Items</span>
                                 </button>
                                 <div class="shopping-cart-content">
                                     <div class="shopping-cart-top">
@@ -241,7 +241,6 @@
                     <nav>
                         <ul class="mobile-menu">
                             <li><a href="{% url 'contact'%}">Contact us</a></li>
-                            <a href="{% url 'logout'%}">Logout</a>
                         </ul>
                     </nav>
                     <!-- mobile menu navigation end -->
