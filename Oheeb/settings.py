@@ -24,7 +24,7 @@ SECRET_KEY = 'u(5^3kk%r64cjz_g13khn)ym+4i_w2t31aaj50xa0!hs&^*8x9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['oheeb.herokuapp.com']
+ALLOWED_HOSTS = ['classicmanda.herokuapp.com']
 
 # Application definition
 
@@ -76,12 +76,9 @@ WSGI_APPLICATION = 'Oheeb.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'Oheeb',
-        'USER': "postgres",
-        "PASSWORD": '08089223577ola',
-        "HOST": 'localhost'
+     'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 import dj_database_url

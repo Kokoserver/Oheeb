@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="06094586-e4af-457b-8162-5eb0478aa80f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Oheeb/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Oheeb/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Oheeb/static/css/plugins/plugins.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Oheeb/static/css/plugins/plugins.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/plugins/plugins.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/plugins/plugins.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/plugins/plugins.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/plugins/plugins.min.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
