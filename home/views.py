@@ -37,9 +37,9 @@ def contact(request):
        messages.success(request,'your form is submitted')
        return render(request, "index.html")
     else:
-       # context = {'name'name, 'email':email, 'subject':subject, 'message':message}
+       context = {'name':name, 'email':email, 'subject':subject, 'message':message}
        messages.error(request, 'your form is not submitted')
-       return render(request, "contact.html", {'name'name, 'email':email, 'subject':subject, 'message':message})
+       return render(request, "contact.html", context)
 
            
 
