@@ -49,7 +49,7 @@ def cart(request, id):
              product = Product.objects.get(id=id)
              if Cart.objects.filter(product=product).exists():
                  messages.error(request, 'You have this product in your cart')
-                 return redirect('home')
+                 return redirect('search')
              else:
                  prodt = Cart(product=product, user=request.user.id, status='pending', is_owned=False)
                  prodt.save()
@@ -58,7 +58,7 @@ def cart(request, id):
                  return render(request, 'dashboard.html', {'carts':carts} )
         elif not request.user.is_authenticated:
                  messages.error(request, 'Please login to add product to cart')
-                 return redirect('home')   
+                 return redirect('search')   
     except ValueError as identifier:
              return redirect('home')
         
