@@ -32,12 +32,12 @@ def contact(request):
        email = request.POST['email']
        subject = request.POST['subject']
        message = request.POST['message']
+       context = {'name':name, 'email':email, 'subject':subject, 'message':message}
        contact = Contact(name=name, email=email, subject=subject, message=message)
        contact.save()
        messages.success(request,'your form is submitted')
        return render(request, "index.html")
     else:
-       context = {'name':name, 'email':email, 'subject':subject, 'message':message}
        messages.error(request, 'your form is not submitted')
        return render(request, "contact.html", context)
 
