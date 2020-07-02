@@ -39,6 +39,8 @@ def contact(request):
     else:
        messages.error(request, 'your form is not submitted')
        return render(request, "contact.html")
+    return render(request, "contact.html")
+    
 
            
 
