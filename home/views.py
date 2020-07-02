@@ -27,11 +27,11 @@ def home(request):
     return render(request, "index.html", context)
 
 def contact(request):
-    if request.method == 'POST':
        name =  request.POST['name']
        email = request.POST['email']
        subject = request.POST['subject']
        message = request.POST['message']
+    if request.method == 'POST':
        contact = Contact(name=name, email=email, subject=subject, message=message)
        contact.save()
        messages.success(request,'your form is submitted')
