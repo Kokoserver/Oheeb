@@ -102,8 +102,11 @@
                         </div>
                         <div class="col-xl-2 col-lg-2 " style="margin-left: 1%; margin-right:0px">
                             <div class="cart-wrap cart-wrap-3 cart-wrap-3-white">
-                                
+                                {% if request.user.is_authenticated%}
                                 <h1><a href="{% url 'dashboard'%}"><i class="la la-shopping-cart"></i></a></h1>
+                                {% else%}
+                                <h1><a href="{% url 'dashboard'%}"><i class="la la-shopping-cart"></i></a></h1>
+                                {%endif%}
                             </div>
                         </div>
                     </div>
