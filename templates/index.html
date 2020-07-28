@@ -199,7 +199,7 @@
                                         <a href="{% url 'product' desktop.id %}"><img src="{% static desktop.image %}" alt="product"></a>
                                         <div class="product-action-4">
                                             <div class="product-action-4-style">
-                                                <a class=""  data-tooltip="Add To Cart" id="AddToCart"><i  class="la la-cart-plus"></i></a>
+                                                <a  href="{% url 'product' desktop.id %}" data-tooltip="Add To Cart" id="AddToCart"><i  class="la la-cart-plus"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -225,7 +225,7 @@
                                         <a href="{% url 'product' motherboard.id %}"><img src="{% static motherboard.image %}" alt="product"></a>
                                         <div class="product-action-4">
                                             <div class="product-action-4-style">
-                                                <a data-tooltip="Add To Cart" href="#" id="addToCart"><i class="la la-cart-plus"></i></a>
+                                                <a data-tooltip="Add To Cart" href="{% url 'product' motherboard.id %}" id="addToCart"><i class="la la-cart-plus"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -253,7 +253,7 @@
                                         <a href="{% url 'product' monitor.id %}"><img src="{% static monitor.image %}" alt="product"></a>
                                         <div class="product-action-4">
                                             <div class="product-action-4-style">
-                                                <a data-tooltip="Add To Cart" href="#" id="addToCart"><i class="la la-cart-plus"></i></a>
+                                                <a data-tooltip="Add To Cart" href="{% url 'product' monitor.id %}" id="addToCart"><i class="la la-cart-plus"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -279,7 +279,7 @@
                                         <a href="{% url 'product' accesspoint.id %}"><img src="{% static accesspoint.image %}" alt="product"></a>
                                         <div class="product-action-4">
                                             <div class="product-action-4-style">
-                                                <a data-tooltip="Add To Cart" href="#" id="addToCart"><i class="la la-cart-plus"></i></a>
+                                                <a data-tooltip="Add To Cart" href="{% url 'product' accesspoint.id %}" id="addToCart"><i class="la la-cart-plus"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -305,7 +305,7 @@
                                         <a href="{% url 'product' camera.id %}"><img src="{% static camera.image %}" alt="product"></a>
                                         <div class="product-action-4">
                                             <div class="product-action-4-style">
-                                                <a data-tooltip="Add To Cart" href="#" id="addToCart"><i class="la la-cart-plus"></i></a>
+                                                <a data-tooltip="Add To Cart" href="{% url 'product' camera.id %}" id="addToCart"><i class="la la-cart-plus"></i></a>
                                             </div>
                                         </div>
                                     </div>

@@ -20,13 +20,14 @@
     <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
         <div class="product-wrap product-border-3 product-img-zoom mb-30">
             <div class="product-img">
-                <a href="{% url 'product' search.id %}"><img src="{{search.image.url}}" style="width: 300px;" alt="product"></a>
+                <a href="{% url 'product' search.id %}"><img src="static/{{search.image}}" style="width: 300px;" alt="product"></a>
                 <div class="product-action-4">
                     <div class="product-action-4-style">
                         <a class=""  data-tooltip="Add To Cart" id="AddToCart"><i  class="la la-cart-plus"></i></a>
                     </div>
                 </div>
             </div>
+             
             <div class="product-content product-content-padding">
                 <h4><a href="{% url 'product' search.id %}">{{search.name}}</a></h4>
                 <div class="price-addtocart">
@@ -37,6 +38,8 @@
             </div>
         </div>
     </div>
+
     {%endfor%}
 </div>
+
 {% endblock%}

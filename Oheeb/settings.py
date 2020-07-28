@@ -52,6 +52,10 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'Oheeb.urls'
+<<<<<<< HEAD
+=======
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+>>>>>>> e7df72d1b339a5208491e4f109f470d248a9b24e
 
 TEMPLATES = [
     {
