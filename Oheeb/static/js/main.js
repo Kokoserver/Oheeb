@@ -993,23 +993,7 @@
         });
     });
     
-    setTimeout(function(e){
-        $('#message').fadeOut('slow')
-    }, 3000)
-   
-    $('#cart').click(()=>{
-        var form = new FormData()
-        form.append('product', this.id)
-        $.ajax({
-            type: "post",
-            url: "cart",
-            data: form,
-            dataType: "JSON",
-            success: function (response) {
-                $('#alert strong').text('product added to cart')
-            }
-        });
-    })
+    
     
 })(jQuery);
 
